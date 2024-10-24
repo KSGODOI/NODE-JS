@@ -1,0 +1,31 @@
+{{>partials/header}}
+
+<form method="POST">  
+<h2>Qual seu nome?</h2>
+    <input type="text" name="nome" placeholder="Digite um nome">
+
+<h2>Qual sua idade?</h2>
+    <input type="text" name="idade"  placeholder="Digite sua idade">
+
+
+<h2>Qual seu telefone?</h2>
+
+    <input type="text" name="telefone"  placeholder="Digite seu telefone">
+
+
+<h2>Qual sua expecialidade?</h2>
+
+    <input type="text" name="expecialidade"  placeholder="Digite sua expecialidade">
+    <input type="submit" value="Enviar">
+</form>
+
+
+{{#mostrar}}
+    Opa {{nome}}, tudo bem?
+    a sua idade é: {{idade}}
+    seu telefone é: {{telefone}},
+    a sua expecialidade é: {{expecialidade}}
+{{/mostrar}}
+
+
+{{>partials/footer}}
